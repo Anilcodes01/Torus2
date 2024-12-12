@@ -95,7 +95,7 @@ const ActiveVsInactivePieChart: React.FC = () => {
         fontWeight: "bold",
         colors: ["#FFFFFF"],
       },
-      formatter: function (val, { seriesIndex }) {
+      formatter: function ( { seriesIndex }: any) {
         const percentages = [
           chartData.percentages.active,
           chartData.percentages.inactive,
