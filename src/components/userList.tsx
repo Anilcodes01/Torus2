@@ -141,7 +141,7 @@ const UserList: React.FC = () => {
                 )}
               </div>
 
-              <div className="hidden sm:block text-gray-500 text-sm text-center">
+              <div className="hidden sm:block text-gray-500 text-sm  text-center">
                 {user.dateJoined}
               </div>
 
@@ -164,7 +164,7 @@ const UserList: React.FC = () => {
           >
             Previous
           </button>
-          <span className="text-sm   w-full text-black">
+          <span className="text-sm flex items-center justify-center  w-full text-black">
             Page {pagination.currentPage} of {pagination.totalPages}
           </span>
           <button
