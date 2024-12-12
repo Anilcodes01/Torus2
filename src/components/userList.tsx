@@ -156,19 +156,19 @@ const UserList: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4">
+        <div className="flex  sm:flex-row gap-4 justify-center items-center mt-4">
           <button
-            className="border w-full sm:w-20 p-1 px-2 rounded-lg text-sm"
+            className="border w-full sm:w-20 p-1 px-2 text-black rounded-lg text-sm"
             onClick={() => handlePageChange(pagination.currentPage - 1)}
             disabled={pagination.currentPage <= 1}
           >
             Previous
           </button>
-          <span className="text-sm">
+          <span className="text-sm   w-full text-black">
             Page {pagination.currentPage} of {pagination.totalPages}
           </span>
           <button
-            className="border w-full sm:w-20 p-1 px-2 rounded-lg text-sm"
+            className="border w-full sm:w-20 p-1 px-2 text-black rounded-lg text-sm"
             onClick={() => handlePageChange(pagination.currentPage + 1)}
             disabled={pagination.currentPage >= pagination.totalPages}
           >
